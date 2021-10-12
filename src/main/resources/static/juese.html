@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>角色</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//返回顶部
+	        $(function () {
+	            $(window).scroll(function(){
+	                if ($(window).scrollTop()>100){/*距离顶部*/
+	                    $("#toTop").fadeIn(1000);/*出现渐变*/
+	                }
+	                else
+	                {
+	                    $("#toTop").fadeOut(500);/*消失渐变*/
+	                }
+	            });
+	    
+	            $("#toTop").click(function(){
+	                $('body,html').animate({scrollTop:0},500);/*调整返回速度*/
+	                return false;
+	            });
+	        });
+		</script>
+	</head>
+	<body>
+		<div id="whole">
+			<div id="d12">
+				<div id="head">
+					<div id="nav">
+						<div class="logo">
+							<a href="https://lol.qq.com/main.shtml"><img src="img1/logo-public.png"></a>
+					</div>
+						<div class="c2"><a href="index.html">首页</a></div>
+						<div class="c2"><a href="juese.html">角色</a></div>
+						<div class="c2"><a href="shipin.html">视频CG</a></div>
+						<div class="c2"><a href="xiazai.html">下载</a></div>
+					
+						<div id="c22" class="c2"><a href="youximoshi.html">游戏模式</a></div>
+						
+						<div id="d4">
+							<a href="###">通行证</a>
+							<div class="c1">
+								<div id="c11">
+									<button id="login" type="button" onclick="divshow()">登录</button>
+								</div>
+								<div id="c12">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a>
+								</div>
+								<div id="c13">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">账户</a>
+								</div>
+							</div>								
+						</div>
+						<div id="d5">
+							<img class="img2" src="img1/logo-public.png"/>
+							<a onclick="divclose()"><img class="i" src="img1/QQ图片20181123135526.png"/></a>
+							<div id="biaodan">
+							<form name="form">
+								<div class="form">
+									<div id="form-item1" class="form-item">
+										<input type="text" name="text" placeholder="电子邮箱" autocomplete="off">
+									</div>
+									<div id="form-item2" class="form-item">
+										<input type="password" name="password" placeholder="密码" autocomplete="off">
+									</div>
+									<div id="denglu">
+										<button class="button1" type="button">登录</button>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="p2">英雄角色</p>
+				<div id="renwu">
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Annie.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">黑暗之女</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Olaf.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">狂战士</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Galio.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">正义巨像</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/TwistedFate.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">卡牌大师</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/XinZhao.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">德邦总管</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Urgot.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">无畏战车</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Leblanc.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path d="M29 10.7v6.2c0 .6-.1 1.1-.4 1.6-2.9 5.3-6.8 9.7-11.8 13.2-.6.4-1 .4-1.6 0-4.9-3.4-8.8-7.8-11.7-13-.3-.6-.4-1.2-.4-1.8 0-3.9.1-7.8 0-11.7-.1-2.9 2.1-3.3 4-3.8C10.4.6 13.3 0 16.6 0c3.1 0 7.7 1.1 9.4 1.6 1.3.4 2.7.9 2.9 2.2.1 1.1 0 2.2.1 3.3v3.6z">	
+										</path>
+									</svg>
+								</span>
+								<span class="iocn2">诡术妖姬</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Vladimir.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">猩红收割者</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/FiddleSticks.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">远古恐惧</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Kayle.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">正义天使</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/MasterYi.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">无极剑圣</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Alistar.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">牛头酋长</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Ryze.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">符文法师</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Sion.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">亡灵战神</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Sivir.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">战争女神</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Soraka.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">众星之子</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Teemo.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">迅捷斥候</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Tristana.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">麦林炮手</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Warwick.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">祖安怒兽</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Nunu.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">雪原双子</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/MissFortune.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">赏金猎人</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Ashe.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">寒冰射手</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Tryndamere.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<g>
+											<path d="M2.1 28.1h7.1V32H2.1z"></path>
+											<path d="M9.1 7v-.7C8.6 1.5 5.6 0 5.6 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M12.5 28.1h7.1V32h-7.1z"></path>
+											<path d="M19.5 7v-.7C19 1.5 16 0 16 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+										<g>
+											<path d="M22.9 28.1H30V32h-7.1z"></path>
+											<path d="M29.9 7v-.7C29.4 1.5 26.4 0 26.4 0s-3 1.5-3.5 6.3V25.4h7V7z"></path>
+										</g>
+									</svg>
+								</span>
+								<span class="iocn2">蛮族之王</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Jax.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">武器大师</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Morgana.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">堕落天使</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Zilean.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">时光守护者</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Singed.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">炼金术士</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Evelynn.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">痛苦之佣</span>
+							</span>
+						</a>
+					</div>
+					<div class="juese">
+						<a href="###" class="dva"><img class="i5" src="img1/Twitch.png"/>
+							<span class="container">
+								<span class="iocn">
+									<svg viewBox="0 0 32 32" role="presentation" class="iocn">
+										<path fill-rule="evenodd" d="M29.3 10.2h-7.5V2.7c0-1.5-1.2-2.7-2.7-2.7h-6.3c-1.5 0-2.7 1.2-2.7 2.7v7.5H2.7c-1.5 0-2.7 1.2-2.7 2.7v6.3c0 1.5 1.2 2.7 2.7 2.7h7.5v7.5c0 1.5 1.2 2.7 2.7 2.7h6.3c1.5 0 2.7-1.2 2.7-2.7v-7.5h7.5c1.5 0 2.7-1.2 2.7-2.7v-6.3c-.1-1.5-1.3-2.7-2.8-2.7z"></path>
+									</svg>
+								</span>
+								<span class="iocn2">瘟疫之源</span>
+							</span>
+						</a>
+					</div>
+				</div>	
+			</div>
+			
+			<div id="d2">
+				<div id="yejiao1">
+					<img class="i3" src="img1/u=1281200293,66600696&fm=26&fmt=auto&gp=0.webp"/>
+				</div>
+				<div id="yejiao2">
+					<br />
+					<a href="###">隐私</a>&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="###">法律条款</a>&nbsp;&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="###">API</a>
+					<br /><br /><hr><br><br>
+					<p>&copy;适龄提示：适合16岁及以上使用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+						&nbsp;&nbsp;&nbsp;<br/>
+					
+					
+					</p>
+				</div>
+				<div id="yejiao3">
+					<hr class="hr1" />
+					<p class="p1">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。<br />
+		健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+					</p>
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="toTop" style="display: none;">回到顶部<img class="totop" src="img1/u=3903485477,1238661159&fm=26&fmt=auto&gp=0.webp"/></a>
+		</div>
+	</body>
+</html>
